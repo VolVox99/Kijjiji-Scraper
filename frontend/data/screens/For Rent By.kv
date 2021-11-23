@@ -1,0 +1,33 @@
+ShowcaseScreen:
+    name: 'For Rent By'
+
+    MyButtonLayout:
+
+
+<MyToggleButton@ToggleButton>:
+    size_hint_y: None
+    height: '48dp'
+
+<MyButtonLayout@GridLayout>:
+    cols: 1
+
+    MyToggleButton:
+        text: 'No Preference'
+        on_press: root.update_for_rent_by_dict(app)
+        id: No Preference
+        group: 'g1'
+
+
+    MyToggleButton:
+        text: 'Owner'
+        id: Owner
+        on_press: root.update_for_rent_by_dict(app)
+        group: 'g1'
+
+    MyToggleButton:
+        text: 'Professional'
+        id: Professional
+        on_press: root.update_for_rent_by_dict(app)
+        group: 'g1'
+
+

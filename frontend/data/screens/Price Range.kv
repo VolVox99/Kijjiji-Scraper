@@ -1,0 +1,67 @@
+ShowcaseScreen:
+    name: 'Price Range'
+
+    GridLayout:
+        cols: 2
+        rows: 3
+        spacing: 0, 25
+
+        CLabel:
+            text: 'Start:'
+        
+        BoxLayout:
+            size_hint_y: None
+            height: '48dp'
+            CLabel:
+                text: '$'
+                size_hint_x: 0.1
+
+            CTextInput:
+                id: start
+                on_text: self.update_dict(app, 'start', self.text, cbox)
+
+
+        CLabel:
+            text: 'End:'
+
+        BoxLayout:
+            size_hint_y: None
+            height: '48dp'
+
+            CLabel:
+                text: '$'
+                size_hint_x: 0.1
+
+            CTextInput:
+                id: end
+                on_text: self.update_dict(app, 'end', self.text, cbox)
+
+
+        CLabel:
+            text: 'All Prices'
+        
+        BoxLayout:
+            size_hint_y: None
+            height: '48dp'
+
+            CCheckBox:
+                id: cbox
+                on_press: self.toggleAll([start, end], cbox, app)
+        
+
+<CCheckBox@CheckBox>:
+
+       
+
+<CTextInput@TextInput>
+    on_focus:
+        screen = self.parent.parent.parent.parent
+        if screen.parent: screen.focused = self
+
+    size_hint_x: 0.90
+    multiline: False
+    text: ''
+    font_size: 30
+
+<CLabel@Label>
+    font_size: 40

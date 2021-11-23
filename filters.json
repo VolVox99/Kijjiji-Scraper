@@ -1,0 +1,26 @@
+{
+    "Unit Type": {
+        "allChosen": true
+    },
+    "Price Range": {
+        "allChosen": true
+    },
+    "For Rent By": {
+        "allChosen": true
+    },
+    "Cities": {
+        "allChosen": false,
+        "chosen": [
+            "Richmond"
+        ]
+    },
+    "Move-In Date": {
+        "allChosen": true
+    },
+    "Date Posted": {
+        "allChosen": true
+    },
+    "Options": {
+        "continueFile": true
+    }
+}

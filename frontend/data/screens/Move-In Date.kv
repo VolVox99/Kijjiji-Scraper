@@ -1,0 +1,60 @@
+ShowcaseScreen:
+    name: 'Move-In Date'
+
+    GridLayout:
+        cols: 2
+        rows: 3
+        spacing: 0, 25
+
+        DLabel:
+            text: 'Start:'
+        
+        BoxLayout:
+            size_hint_y: None
+            height: '48dp'
+
+            DTextInput:
+                id: start
+                on_text: self.update_dict(app, 'start', self.text, cbox, 'Move-In Date')
+
+
+        DLabel:
+            text: 'End:'
+
+        BoxLayout:
+            size_hint_y: None
+            height: '48dp'
+
+
+            DTextInput:
+                id: end
+                on_text: self.update_dict(app, 'end', self.text, cbox, 'Move-In Date')
+
+
+        DLabel:
+            text: 'All Dates'
+        
+        BoxLayout:
+            size_hint_y: None
+            height: '48dp'
+
+            DCheckBox:
+                id: cbox
+                on_press: self.toggleAll([start, end], cbox, app, 'Move-In Date')
+        
+
+<DCheckBox@CheckBox>:
+
+       
+<DTextInput@TextInput>
+    on_focus:
+        screen = self.parent.parent.parent.parent
+        if screen.parent: screen.focused = self
+
+    size_hint_x: 0.90
+    multiline: False
+    text: ''
+    font_size: 30
+
+<DLabel@Label>
+    font_size: 40

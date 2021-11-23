@@ -1,0 +1,73 @@
+ShowcaseScreen:
+    name: 'City'
+
+    GridLayout:
+        cols: 2
+        spacing: 60
+
+        DLabel:
+            text: 'Enter a city:'
+
+        BoxLayout:
+            size_hint_y: None
+            height: '48dp'
+
+
+            CityTextInput:
+                id: textField
+                size_hint_x: 0.7
+         
+            
+            Button:
+                size_hint_x: 0.3
+                text: 'submit'
+                on_press: textField.addCity(cbox,textLabel, textField.text, app)
+
+
+        DLabel:
+            text: 'All of Canada:'
+        
+        BoxLayout:
+            size_hint_y: None
+            height: '48dp'
+
+            CityCheckBox:
+                id: cbox
+                on_press: textField.toggleAll(self, textLabel, app)
+
+
+        Label:
+            text: 'Cities entered:\n[size=15](press on a city to delete)[/size]'
+            font_size: 30
+            markup: True
+
+        BoxLayout:
+            size_hint_y: None
+            height: '48dp'
+            Label:
+                text_size: root.width//2, dp(50)
+                #size: self.texture_size
+                halign: 'justify'
+                shorten: True
+                shorten_from: 'right'
+                valign: 'middle'
+                id: textLabel
+                markup: True
+                on_ref_press: textField.removeCity(cbox, *args, app)
+
+
+<CityCheckBox@CheckBox>:
+
+
+<CityTextInput@TextInput>
+    on_focus:
+        screen = self.parent.parent.parent.parent
+        if screen.parent: screen.focused = self
+
+    size_hint_x: 0.90
+    multiline: False
+    text: ''
+    font_size: 30
+
+<DLabel@Label>
+    font_size: 40

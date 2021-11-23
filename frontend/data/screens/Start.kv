@@ -1,0 +1,14 @@
+#:import util util
+ShowcaseScreen:
+    name: 'Start'
+
+    BoxLayout:
+        spacing: 40
+        StartButton:
+            size_hint_y: None
+            height: '48dp'
+            text: 'Apply Filters and Start Script'
+            on_press: self.startScript(app.filter_dict, app)
+
+
+<StartButton@Button>

@@ -1,0 +1,13 @@
+ShowcaseScreen:
+    name: 'Options'
+    BoxLayout:
+        size_hint_y: None
+        height: '48dp'
+
+        Label:
+            text: 'Continue File'
+
+        MySwitch:
+            on_active: self.handleToggle(*args, app)
+
+<MySwitch@Switch>

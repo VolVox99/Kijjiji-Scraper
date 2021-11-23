@@ -1,0 +1,47 @@
+ShowcaseScreen:
+    name: 'Unit Type'
+
+    NewButtonLayout:
+
+<NewToggleButton@ToggleButton>:
+    size_hint_y: None
+    height: '48dp'
+
+<NewButtonLayout@GridLayout>:
+    cols: 2
+
+    NewToggleButton:
+        text: 'No Preference'
+        on_press: root.toggleAll(app)
+        id: No Preference
+
+
+    NewToggleButton:
+        text: 'Apartment'
+        id: Apartment
+        on_press: root.toggleNoPref(app)
+
+    NewToggleButton:
+        text: 'Condo'
+        id: Condo
+        on_press: root.toggleNoPref(app)
+
+    NewToggleButton:
+        text: 'Basement'
+        id: Basement
+        on_press: root.toggleNoPref(app)
+
+    NewToggleButton:
+        text: 'House'
+        id: House
+        on_press: root.toggleNoPref(app)
+
+    NewToggleButton:
+        text: 'Townhouse'
+        id: Townhouse
+        on_press: root.toggleNoPref(app)
+
+    NewToggleButton:
+        text: 'Duplex/Triplex'
+        id: Duplex/Triplex
+        on_press: root.toggleNoPref(app)
