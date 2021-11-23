@@ -54,18 +54,18 @@ the website.
 Then it will continually output a number that keepsincreasing. Each number is one listing being
 written to the file.
 
-```
+
 Every so often, it will continually output “sleeping”instead of a number. This means the script
 has temporarily stopped making requests to the website'sserver because they block too many
 requests. Do not worry, it will continue after 20-30seconds once the server allows it once more.
-```
+
 Finally it will output “FINISHED”. It is done runningand you can now open the output file to view
 the results. You cannot have the file open in somethingsuch as excel while the script is running
 or it will error as it will not be able to write toit.
 
-```
+
 If it ever displays something cryptic such as
-```
+
 ### Traceback (most recent call last):
 
 ### File "C:\Users\\main.py", line 99, in <module>
