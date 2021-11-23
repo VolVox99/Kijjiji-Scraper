@@ -1,4 +1,7 @@
 # Kijjiji-Scraper
+
+![alt text](https://media.discordapp.net/attachments/836304486652706849/912580329116667924/unknown.png)
+
 # Instructions
 
 All terminal commands are highlighted.
