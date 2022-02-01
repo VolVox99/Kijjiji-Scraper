@@ -1,6 +1,6 @@
 # Kijjiji-Scraper
 
-![alt text](https://media.discordapp.net/attachments/836304486652706849/912580329116667924/unknown.png)
+![](https://i.ibb.co/GQ6mp5T/2022-01-31-17-25-33.gif)
 
 # Instructions
 
