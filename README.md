@@ -14,11 +14,11 @@ everywhere instead ofpython.
 
 1. unzip the downloaded folder
 2. Open the terminal
-3. Type incdand space
+3. Type in "cd" and space 
 4. open the terminal and drag (click, hold down andmove mouse) the unzipped folder onto
 the terminal
 5. It should have pasted the folders path after cdonto the terminal. Press enter
-6. typepython -m pip install -r requirements.txtand press enter
+6. typepython -m pip install -r requirements.txt and press enter
 
 Every other time you would like to run the script,you need to redo steps 2-4 from the first
 time, so your terminal is running in the folder ofthe script.
