@@ -18,7 +18,7 @@ everywhere instead ofpython.
 4. open the terminal and drag (click, hold down andmove mouse) the unzipped folder onto
 the terminal
 5. It should have pasted the folders path after cdonto the terminal. Press enter
-6. typepython -m pip install -r requirements.txt and press enter
+6. type python -m pip install -r requirements.txt and press enter
 
 Every other time you would like to run the script,you need to redo steps 2-4 from the first
 time, so your terminal is running in the folder ofthe script.
